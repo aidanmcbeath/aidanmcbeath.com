@@ -156,7 +156,7 @@
               </div>
 
             <!-- Experience Items -->
-            <div class="experience-item" data-start-date="Jan 2023">
+            <div class="experience-item" data-start-date="Jan 2023" data-end-date="Present">
               <div class="experience-content">
                 <h6 class="d-inline-block">Consultant - Robotic Process Automation</h6>
                 <span class="d-block">Synergy Group · Full-time</span>
@@ -166,7 +166,7 @@
               </div>
             </div>
 
-            <div class="experience-item" data-start-date="Jan 2023">
+            <div class="experience-item" data-start-date="Jan 2023" data-end-date="Present">
               <div class="experience-content">
                 <h6 class="d-inline-block">Army Reserve - Forward Observer</h6>
                 <span class="d-block">Australian Army · Part-time</span>
@@ -176,7 +176,7 @@
               </div>
             </div>
 
-            <div class="experience-item" data-start-date="Jan 2022">
+            <div class="experience-item" data-start-date="Jan 2022" data-end-date="Jan 2023">
               <div class="experience-content">
                 <h6 class="d-inline-block">Guard Member</h6>
                 <span class="d-block">Australian Army · Full-time</span>
@@ -186,7 +186,7 @@
               </div>
             </div>
 
-            <div class="experience-item" data-start-date="Jul 2018">
+            <div class="experience-item" data-start-date="Jul 2018" data-end-date="Dec 2021">
               <div class="experience-content">
                 <h6 class="d-inline-block">Sense, Warn & Locate Operator</h6>
                 <span class="d-block">Australian Army · Full-time</span>
@@ -619,7 +619,7 @@
   // Function to calculate duration in years and months
   function calculateDuration(startDate, endDate) {
     const start = new Date(startDate);
-    const end = endDate ? new Date(endDate) : new Date();
+    const end = endDate === 'Present' ? new Date() : new Date(endDate);
     const years = end.getFullYear() - start.getFullYear();
     const months = end.getMonth() - start.getMonth();
     const totalMonths = years * 12 + months;
@@ -632,12 +632,12 @@
 
     experienceItems.forEach(item => {
       const startDate = item.getAttribute('data-start-date');
-      const duration = calculateDuration(startDate);
+      const endDate = item.getAttribute('data-end-date');
+      const duration = calculateDuration(startDate, endDate);
       item.querySelector('.exp-duration').textContent = duration;
     });
   });
 </script>
-
 </body>
 
 </html>
