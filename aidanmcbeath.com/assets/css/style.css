@@ -931,6 +931,10 @@ a:hover {
   text-align: center;
 }
 
+[data-share-badge-id] {
+  background-color: #fff; /* Set the background color of all badges to white */
+}
+
 @media (min-width: 577px) {
   .counter-box {
     margin-bottom: 1.8rem;
