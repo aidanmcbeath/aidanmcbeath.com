@@ -994,11 +994,11 @@ a:hover {
   padding-top: 40px;
 }
 
-.project-template .project-template.html-slider img {
+.project-template .project-template-slider img {
   width: 100%;
 }
 
-.project-template .project-template.html-slider .swiper-pagination {
+.project-template .project-template-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
