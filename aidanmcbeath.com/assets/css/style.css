@@ -860,20 +860,6 @@ a:hover {
   background-color: #0078ff;
 }
 
-/*--------------------------------------------------------------
-# Experience
---------------------------------------------------------------*/
-
-<style>
-  /* Custom CSS to decrease spacing between sections */
-  #experience {
-    margin-top: 0rem;
-  }
-</style>
-
-/*--------------------------------------------------------------
-# Services
---------------------------------------------------------------*/
 .service-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
