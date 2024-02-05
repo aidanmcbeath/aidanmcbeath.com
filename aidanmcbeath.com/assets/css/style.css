@@ -826,7 +826,7 @@ a:hover {
 --------------------------------------------------------------*/
 .about-mf .box-shadow-full {
   padding-top: 4rem;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0rem;
 }
 
 .about-mf .about-img {
@@ -867,7 +867,7 @@ a:hover {
 <style>
   /* Custom CSS to decrease spacing between sections */
   #experience {
-    margin-top: 0px; /* Adjust this value as needed */
+    margin-top: 0px;
   }
 </style>
 
