@@ -156,41 +156,41 @@
               </div>
 
             <!-- Experience Items -->
-            <div class="experience-item">
+            <div class="experience-item" data-start-date="Jan 2023">
               <div class="experience-content">
                 <h6 class="d-inline-block">Consultant - Robotic Process Automation</h6>
                 <span class="d-block">Synergy Group · Full-time</span>
-                <p>Jan 2023 - Present <span id="exp1_duration"></span></p>
+                <p>Jan 2023 - Present <span class="exp-duration"></span></p>
                 <p>Melbourne, Victoria, Australia · On-site</p>
                 <p>Responsible for robotic process automation consulting at Synergy Group.</p>
               </div>
             </div>
 
-            <div class="experience-item">
+            <div class="experience-item" data-start-date="Jan 2023">
               <div class="experience-content">
                 <h6 class="d-inline-block">Army Reserve - Forward Observer</h6>
                 <span class="d-block">Australian Army · Part-time</span>
-                <p>Jan 2023 - Present · 1 yr 2 mos</p>
+                <p>Jan 2023 - Present <span class="exp-duration"></span></p>
                 <p>Melbourne, Victoria, Australia · On-site</p>
                 <p>Responsible for forward observation duties in the Army Reserve, including conducting ceremonial tasks and teamwork in small and large teams.</p>
               </div>
             </div>
 
-            <div class="experience-item">
+            <div class="experience-item" data-start-date="Jan 2022">
               <div class="experience-content">
                 <h6 class="d-inline-block">Guard Member</h6>
                 <span class="d-block">Australian Army · Full-time</span>
-                <p>Jan 2022 - Jan 2023 · 1 yr 1 mo</p>
+                <p>Jan 2022 - Jan 2023 <span class="exp-duration"></span></p>
                 <p>Canberra, Australian Capital Territory, Australia</p>
                 <p>Conducted ceremonial tasks representing Australia and the ADF, including last post ceremonies, guards for politicians and senior military officials, and firing parties. Also responsible for teamwork, equipment management, safe operation of vehicles, and other tasks as directed.</p>
               </div>
             </div>
 
-            <div class="experience-item">
+            <div class="experience-item" data-start-date="Jul 2018">
               <div class="experience-content">
                 <h6 class="d-inline-block">Sense, Warn & Locate Operator</h6>
                 <span class="d-block">Australian Army · Full-time</span>
-                <p>Jul 2018 - Dec 2021 · 3 yrs 6 mos</p>
+                <p>Jul 2018 - Dec 2021 <span class="exp-duration"></span></p>
                 <p>Adelaide, South Australia, Australia</p>
                 <p>Operated military radar technology, utilized military communications equipment, managed detachments, and assisted in Defence Assistance to the Civil Community tasks. Also responsible for equipment management, safe operation of vehicles, and firearms.</p>
               </div>
@@ -628,13 +628,12 @@
 
   // Update the duration for each experience item
   document.addEventListener('DOMContentLoaded', function () {
-    const experiences = [
-      { id: 'exp1_duration', start: 'Jan 2023' } // Add more experiences similarly
-    ];
+    const experienceItems = document.querySelectorAll('.experience-item');
 
-    experiences.forEach(exp => {
-      const duration = calculateDuration(exp.start);
-      document.getElementById(exp.id).textContent = duration;
+    experienceItems.forEach(item => {
+      const startDate = item.getAttribute('data-start-date');
+      const duration = calculateDuration(startDate);
+      item.querySelector('.exp-duration').textContent = duration;
     });
   });
 </script>
