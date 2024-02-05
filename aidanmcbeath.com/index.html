@@ -160,7 +160,7 @@
               <div class="experience-content">
                 <h6 class="d-inline-block">Consultant - Robotic Process Automation</h6>
                 <span class="d-block">Synergy Group · Full-time</span>
-                <p>Jan 2023 - Present · 1 yr 2 mos</p>
+                <p>Jan 2023 - Present <span id="exp1_duration"></span></p>
                 <p>Melbourne, Victoria, Australia · On-site</p>
                 <p>Responsible for robotic process automation consulting at Synergy Group.</p>
               </div>
@@ -613,6 +613,31 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+<!-- Custom JavaScript -->
+<script>
+  // Function to calculate duration in years and months
+  function calculateDuration(startDate, endDate) {
+    const start = new Date(startDate);
+    const end = endDate ? new Date(endDate) : new Date();
+    const years = end.getFullYear() - start.getFullYear();
+    const months = end.getMonth() - start.getMonth();
+    const totalMonths = years * 12 + months;
+    return `${years} yr ${months} mos`;
+  }
+
+  // Update the duration for each experience item
+  document.addEventListener('DOMContentLoaded', function () {
+    const experiences = [
+      { id: 'exp1_duration', start: 'Jan 2023' } // Add more experiences similarly
+    ];
+
+    experiences.forEach(exp => {
+      const duration = calculateDuration(exp.start);
+      document.getElementById(exp.id).textContent = duration;
+    });
+  });
+</script>
 
 </body>
 
