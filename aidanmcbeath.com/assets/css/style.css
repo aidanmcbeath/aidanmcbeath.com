@@ -915,7 +915,7 @@ a:hover {
 }
 
 /* Remove border from the last entry */
-.experience-entry:last-child {
+.experience-item:last-child {
   border-bottom: none;
 }
 
