@@ -203,7 +203,7 @@
   /**
    * Portfolio details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.project-template-slider', {
     speed: 400,
     loop: true,
     autoplay: {
