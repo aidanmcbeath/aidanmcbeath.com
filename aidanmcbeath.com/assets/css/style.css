@@ -990,20 +990,20 @@ a:hover {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.project-template.html {
+.project-template {
   padding-top: 40px;
 }
 
-.project-template.html .project-template.html-slider img {
+.project-template .project-template.html-slider img {
   width: 100%;
 }
 
-.project-template.html .project-template.html-slider .swiper-pagination {
+.project-template .project-template.html-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.project-template.html .project-template.html-slider .swiper-pagination .swiper-pagination-bullet {
+.project-template .project-template-slider .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
@@ -1011,16 +1011,16 @@ a:hover {
   border: 1px solid #0078ff;
 }
 
-.project-template.html .project-template.html-slider .swiper-pagination .swiper-pagination-bullet-active {
+.project-template .project-template-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #0078ff;
 }
 
-.project-template.html .portfolio-info {
+.project-template .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
 }
 
-.project-template.html .portfolio-info h3 {
+.project-template .portfolio-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1028,27 +1028,27 @@ a:hover {
   border-bottom: 1px solid #eee;
 }
 
-.project-template.html .portfolio-info ul {
+.project-template .portfolio-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.project-template.html .portfolio-info ul li+li {
+.project-template .portfolio-info ul li+li {
   margin-top: 10px;
 }
 
-.project-template.html .portfolio-description {
+.project-template .portfolio-description {
   padding-top: 30px;
 }
 
-.project-template.html .portfolio-description h2 {
+.project-template .portfolio-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.project-template.html .portfolio-description p {
+.project-template .portfolio-description p {
   padding: 0;
 }
 
