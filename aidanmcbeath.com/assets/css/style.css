@@ -764,6 +764,10 @@ a:hover {
   font-size: 3rem;
 }
 
+.hero .hero-subtitle .typed {
+  color: skyblue;
+}
+
 @media (min-width: 768px) {
   .hero .hero-title {
     font-size: 4.5rem;
