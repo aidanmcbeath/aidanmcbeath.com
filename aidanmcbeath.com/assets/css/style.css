@@ -215,6 +215,7 @@ a:hover {
 /*------/ Socials /------*/
 .socials {
   padding: 1.5rem 0;
+  padding-left: 80px;
 }
 
 .socials ul li {
