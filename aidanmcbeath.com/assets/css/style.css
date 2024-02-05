@@ -904,6 +904,22 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
+# Experience
+--------------------------------------------------------------*/
+
+.experience-entry {
+  /* Add spacing between entries if needed */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc; /* Add a bottom border */
+}
+
+/* Remove border from the last entry */
+.experience-entry:last-child {
+  border-bottom: none;
+}
+
+/*--------------------------------------------------------------
 # Counter
 --------------------------------------------------------------*/
 .counter-box {
