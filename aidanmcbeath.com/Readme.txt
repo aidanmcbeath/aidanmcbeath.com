@@ -1,4 +1,4 @@
-This is a portfolio website based on template by BootstrapMade (details at bottom of file).
+This is a portfolio website based on a template by BootstrapMade (details at bottom of file).
 I am using NGINX as the web server component hosted on a Linode Ubuntu server.
 A webhook has been configured to notify the server of any commits to the main branch.
 Upon receiving notification a PHP script pulls the latest commit directly into production.
