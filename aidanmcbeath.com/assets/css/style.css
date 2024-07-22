@@ -1200,7 +1200,7 @@ a:hover {
 .card-blog .card-category-box {
   position: absolute;
   text-align: center;
-  top: 25px; /* Adjusted value to position the category box correctly */
+  top: 10px; /* Adjusted value to position the category box correctly */
   left: 15px;
   right: 15px;
   line-height: 25px;
@@ -1265,18 +1265,6 @@ a:hover {
   height: 100%;
   object-fit: cover; /* Ensures the image covers the area without stretching */
 }
-
-
-.card-category-box {
-  position: absolute;
-  top: 25px; /* Adjusted value to move the category box down */
-  left: 15px;
-  right: 15px;
-  z-index: 1;
-  padding: 5px; /* Optional: Adds padding inside the category box */
-  border-radius: 5px; /* Optional: Adds rounded corners to the category box */
-}
-
 
 .card-body {
   flex: 1;
