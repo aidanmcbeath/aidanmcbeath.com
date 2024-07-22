@@ -1248,6 +1248,31 @@ a:hover {
   text-overflow: ellipsis;
 }
 
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-img img {
+  height: 250px; /* Set a consistent height for all images */
+  width: 100%; /* Ensure the image takes the full width of the container */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+}
+
+.card-body {
+  flex: 1; /* Allow the card body to grow and take available space */
+}
+
+.card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 
 /*--------------------------------------------------------------
 # Blog Single
