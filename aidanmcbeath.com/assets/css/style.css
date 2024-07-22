@@ -965,6 +965,9 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow the box to grow and fill the available space */
 }
 
 .work-box:hover img {
@@ -982,6 +985,7 @@ a:hover {
 
 .work-content {
   padding: 2rem 3% 1rem 4%;
+  flex-grow: 1
 }
 
 .work-content .w-more {
