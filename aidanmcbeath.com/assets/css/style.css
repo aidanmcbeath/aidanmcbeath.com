@@ -1178,10 +1178,19 @@ a:hover {
 /*--------------------------------------------------------------
 # Blog
 --------------------------------------------------------------*/
+
 @media (min-width: 767px) {
   .card-blog {
     margin-bottom: 3rem;
   }
+}
+
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-bottom: 30px;
 }
 
 .card-blog .card-body {
@@ -1191,10 +1200,11 @@ a:hover {
 .card-blog .card-category-box {
   position: absolute;
   text-align: center;
-  top: -16px;
+  top: 25px; /* Adjusted value to position the category box correctly */
   left: 15px;
   right: 15px;
   line-height: 25px;
+  z-index: 1; /* Ensure it appears above the image */
   overflow: hidden;
 }
 
@@ -1202,7 +1212,6 @@ a:hover {
   display: inline-block;
   color: #fff;
   padding: 0 15px 5px;
-  overflow: hidden;
   background-color: #0078ff;
   border-radius: 4px;
 }
@@ -1223,6 +1232,11 @@ a:hover {
 
 .card-blog .card-description {
   color: #4e4e4e;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .card-blog .post-author {
@@ -1240,22 +1254,6 @@ a:hover {
   overflow: hidden; /* Hide overflow content */
 }
 
-.card-description {
-  display: -webkit-box;
-  -webkit-line-clamp: 3; /* Limit to 3 lines */
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.card-blog {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  margin-bottom: 30px;
-}
-
 .card-img {
   position: relative;
   height: 250px; /* Set a consistent height for all images */
@@ -1268,9 +1266,10 @@ a:hover {
   object-fit: cover; /* Ensures the image covers the area without stretching */
 }
 
+
 .card-category-box {
   position: absolute;
-  top: 15px; /* Adjusted value to move the category box down */
+  top: 25px; /* Adjusted value to move the category box down */
   left: 15px;
   right: 15px;
   z-index: 1;
