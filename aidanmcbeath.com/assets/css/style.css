@@ -1274,7 +1274,6 @@ a:hover {
   left: 15px;
   right: 15px;
   z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a background to make the text stand out */
   padding: 5px; /* Optional: Adds padding inside the category box */
   border-radius: 5px; /* Optional: Adds rounded corners to the category box */
 }
