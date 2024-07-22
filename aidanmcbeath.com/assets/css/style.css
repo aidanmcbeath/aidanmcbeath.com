@@ -1270,11 +1270,15 @@ a:hover {
 
 .card-category-box {
   position: absolute;
-  bottom: -20px; /* Adjust this value to move the category box down */
+  top: 15px; /* Adjusted value to move the category box down */
   left: 15px;
   right: 15px;
   z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a background to make the text stand out */
+  padding: 5px; /* Optional: Adds padding inside the category box */
+  border-radius: 5px; /* Optional: Adds rounded corners to the category box */
 }
+
 
 .card-body {
   flex: 1;
