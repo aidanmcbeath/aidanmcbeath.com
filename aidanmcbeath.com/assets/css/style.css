@@ -967,7 +967,8 @@ a:hover {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Allow the box to grow and fill the available space */
+  flex-grow: 1;
+  height: 100%;
 }
 
 .work-box:hover img {
@@ -977,10 +978,15 @@ a:hover {
 .work-img {
   display: block;
   overflow: hidden;
+  height: 250px;
 }
 
-.work-img img {
-  transition: all 1s;
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+  flex-grow: 1; /* Allow the content area to expand and fill the available space */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensure content is evenly distributed */
 }
 
 .work-content {
